@@ -2,12 +2,18 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 .brand{
     display: flex;
    align-items: center;
    gap: 10px;
    
+}
+.brand h2{
+    font-size: 18px;
+    color:whitesmoke;
+    margin: 0;
 }
 .logo{
     height: 50px;
@@ -19,14 +25,16 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
-    background:rgb(45, 170, 181);
+    padding: 10px 40px;
+    background:#0d233a;
     box-shadow:0 2px 10px rgba(0,0,0,0,1);
     
 }
 .navbar ul{
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
     
 }
 .navbar ul li{
@@ -38,7 +46,13 @@ body{
 .navbar a{
     text-decoration: none;
     white-space: nowrap;
+    color: #ffcc00;
+    font-weight: bold;
     
+}
+.navbar a:hover{
+    text-decoration: underline;
+    color: #ffffff;
 }
 .hero{
     height: 100vh;
@@ -56,39 +70,60 @@ body{
     
 }
 .hero h1{
-    font-size:40px;
+    font-size:45px;
+    margin-bottom: 10px;
 }
 .hero p{
     font-size: 20px;
-    margin: 20px 25px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+.hero-btn a {
+    display: inline-block;
+    background: #004085;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn a:hover {
+    background: #0b3d91;
 }
 .about{
-    padding: 80px 10%;
+    padding: 60px 10%;
     text-align: center;
-    background: lightblue;
+    background:#e3f2fd;
     
 
 }
 .about h2{
-    font-size: 40px;
+    font-size: 36px;
     margin-bottom: 20px ;
-    background: rgb(95, 19, 65);
-
+    color: rgb(95,19,65);
 }
 .about p{
     font-size: 18px;
     line-height: 1.6;
-    color: gray;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+
 }
 .courses{
-    padding: 40px 10%;
+    padding: 60px 10%;
     text-align: center;
-    background:rgba(6, 42, 49, 0.677)
+    background:rgba(6, 42, 49, 0.8)
+    
+    
 }
 .courses h2{
-    font-size: 40px;
-    margin-bottom: 20px ;
-    background: rgb(179, 170, 176);
+    font-size: 36px;
+    margin-bottom: 30px ;
+    background: rgb(255,255,255);
 }
     
 .courses-box{
@@ -105,7 +140,7 @@ body{
     max-width: 550px;
     padding: 30px; 
     border-radius: 10px;
-    border-style: solid;
+    box-shadow: 0 4px 15px rgb(0,0,0,0.2);
 
 }
 .course ul{
@@ -114,40 +149,49 @@ margin-top: 15px;
 font-weight: 700;
 }
 .course li{
-    margin: 8px 0;
+    margin: 12px 0;
+}
+.facilities h2{
+    font-size: 36px;
+    color: #333;
 }
 .facilities-box{
     display: flex;
-    justify-content: space-around;
-    margin: 30px;
+    justify-content:center;
+    margin-top: 30px;
+    gap:20px;
     flex-wrap:wrap;
     
 }
 .facilities-box div{
     background-color: #0a8151;
     padding: 20px;
-    margin: 10px;
     border-radius: 10px;
-    width: 150px;
+    width: 180px;
     text-align: center;
-    font-weight: 50;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0 0 0 0.1);
 }
-
+.notice-container{
+    padding: 40px 10%;
+    display: flex;
+    justify-content: center;
+}
 .notice-box {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     border: 2px solid #004085;
     border-radius: 6px;
     background: #ffffff;
     font-family: sans-serif;
-    margin-left:10px;
+   
     
 }
 /* Header style */
 .notice-head {
     background: #004085;
     color: white;
-    padding: 10px;
+    padding: 12px;
     font-weight: bold;
     text-align: center;
     font-size: 16px;
@@ -178,12 +222,43 @@ font-weight: 700;
     color: #004085;
     text-decoration: underline;
 }
+#Contact{
+    padding: 60px 10%;
+    text-align: center;
+    background: #f8f9fa;
+    
+}
+#Contact h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#Contact h3 {
+    font-size: 16px;
+    color: #555;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#Contact iframe {
+    width: 100%;
+    max-width: 800px; 
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
 footer{
     background: #0b3d91;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px 20px;
+    font-size: 15px;
 
+}
+footer p{
+    margin: 5px 0;
 }
 footer b{
     color:yellow
