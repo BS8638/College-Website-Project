@@ -1,8 +1,16 @@
 @media only screen and (max-width:768px){
-
+    *{
+        box-sizing: border-box;
+    }
+html,body{
+    width: 100px;
+    overflow-x: hidden;
+}
 /* Navbar */
 .navbar{
     padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar ul li{
@@ -22,7 +30,9 @@
 /* Hero */
 .hero{
     padding: 20px;
-    height: 70vh;
+    height: auto;
+    min-height: 70vh;
+    box-sizing: border-box;
 }
 
 .hero h1{
@@ -36,6 +46,7 @@
 /* About */
 .about{
     padding: 50px 20px;
+    box-sizing: border-box;
 }
 
 .about h2,
@@ -46,17 +57,26 @@
 /* Courses */
 .course{
     width: 90%;
+    margin: 10px auto;
 }
-
+.facilities-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* Facilities */
 .facilities-box div{
-    width: 120px;
+    max-width: 300px;
+    width: 90%;
+    margin: 10px 0;
+    box-sizing: border-box;
 }
 
 /* Notice board */
 .notice-box{
     width: 90%;
     margin: 20px auto;
+    box-sizing: border-box;
 }
 
 /* Footer */
