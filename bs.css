@@ -22,17 +22,27 @@ body{
     padding: 10px 10px;
     background:rgb(45, 170, 181);
     box-shadow:0 2px 10px rgba(0,0,0,0,1);
+    flex-wrap:wrap;
 }
 .navbar ul{
     list-style: none;
     display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
 }
 .navbar ul li{
-    margin:0 40px;
+    margin:0 ;
+    
+    
+   
 }
 .navbar a{
     text-decoration: none;
     white-space: nowrap;
+    
 }
 .hero{
     height: 100vh;
@@ -89,14 +99,15 @@ body{
 .courses-box{
     display: flex;
     justify-content: center;
-    margin-top:  10px;
-    
+    margin-top:10px;
+    flex-wrap: wrap;
 
 
 }
 .course{
     background:#ffffff;
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
     padding: 30px; 
     border-radius: 10px;
     border-style: solid;
@@ -134,7 +145,7 @@ font-weight: 700;
     border-radius: 6px;
     background: #ffffff;
     font-family: sans-serif;
-    margin-left: 50px;
+    margin-left:10px;
     
 }
 /* Header style */
@@ -177,6 +188,60 @@ footer{
     color: white;
     text-align: center;
     padding: 20px;
+
+}
+footer b{
+    color:yellow
+}
+@media (max-width: 768px) {
+
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+    }
+
+    .hero h1{
+        font-size: 32px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .courses-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facilities-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about{
+        padding: 40px 5%;
+    }
+    
+   
+    footer{
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    footer p{
+        font-size: 13px;
+        line-height: 1.5;
+        margin: 6px 0;
+    }
+
+    footer p b{
+        display: inline-block;
+        margin-top: 5px;
+    }
 }
 
 
