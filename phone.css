@@ -1,87 +1,134 @@
-@media only screen and (max-width:768px){
-    *{
+@media only screen and (max-width: 768px) {
+    * {
         box-sizing: border-box;
     }
-html,body{
-    width: 100px;
-    overflow-x: hidden;
-}
-/* Navbar */
-.navbar{
-    padding: 10px 15px;
-    width: 100%;
-    box-sizing: border-box;
-}
 
-.navbar ul li{
-    margin: 0 10px;
-}
+    html, body {
+        width: 100%; /* Yahan 100px tha, use 100% kar diya */
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
 
-.navbar a{
-    font-size: 14px;
-}
+    /* Navbar */
+    .navbar {
+        padding: 10px 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Mobile par logo aur menu ek ke niche ek aane ke liye */
+        align-items: center;
+        text-align: center;
+    }
 
-/* Logo */
-.logo{
-    width: 50px;
-    height: 40px;
-}
+    .navbar h2 {
+        font-size: 16px; /* College ka bada naam phone screen ke andar fit karne ke liye */
+    }
 
-/* Hero */
-.hero{
-    padding: 20px;
-    height: auto;
-    min-height: 70vh;
-    box-sizing: border-box;
-}
+    .navbar ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-.hero h1{
-    font-size: 32px;
-}
+    .navbar ul li {
+        margin: 5px 10px;
+        list-style: none;
+    }
 
-.hero p{
-    font-size: 16px;
-}
+    .navbar a {
+        font-size: 14px;
+    }
 
-/* About */
-.about{
-    padding: 50px 20px;
-    box-sizing: border-box;
-}
+    /* Logo */
+    .logo {
+        width: 50px;
+        height: 40px;
+    }
 
-.about h2,
-.courses h2{
-    font-size: 28px;
-}
+    /* Hero Section */
+    .hero {
+        padding: 40px 20px;
+        height: auto;
+        min-height: auto; /* Extra khali jagah ko khatam karega */
+        text-align: center;
+    }
 
-/* Courses */
-.course{
-    width: 90%;
-    margin: 10px auto;
-}
-.facilities-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* Facilities */
-.facilities-box div{
-    max-width: 300px;
-    width: 90%;
-    margin: 10px 0;
-    box-sizing: border-box;
-}
+    .hero h1 {
+        font-size: 26px;
+    }
 
-/* Notice board */
-.notice-box{
-    width: 90%;
-    margin: 20px auto;
-    box-sizing: border-box;
-}
+    .hero p {
+        font-size: 16px;
+    }
+    
+    .hero-btn a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
 
-/* Footer */
-footer{
-    font-size: 14px;
-}
+    /* About Section */
+    .about {
+        padding: 30px 20px;
+        text-align: center;
+    }
 
+    .about h2, .courses h2, .facilities h2, .Contact h2 {
+        font-size: 24px;
+    }
+
+    /* Courses Section */
+    .course {
+        width: 100%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    /* Facilities Section */
+    .facilities-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facilities-box div {
+        max-width: 100%;
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Notice Board */
+    .notice-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .notice-box {
+        width: 100%;
+        margin: 20px auto;
+        height: auto; /* Box ka extra khali space hatane ke liye */
+    }
+
+    /* Contact & Google Map (Main Problem) */
+    .Contact {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .Contact h3 {
+        font-size: 14px;
+    }
+
+    .Contact iframe {
+        width: 100% !important; /* Map ko phone ke screen ke andar fit karne ke liye */
+        height: 250px !important; /* Mobile ke liye map ki height thodi choti ki */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 13px;
+        text-align: center;
+        padding: 15px;
+    }
 }
