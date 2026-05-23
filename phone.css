@@ -109,6 +109,21 @@
         margin: 20px auto;
         height: auto; /* Box ka extra khali space hatane ke liye */
     }
+    .collegevideo{
+        padding: 30px 20px;
+
+    }
+    .collegevideo h2{
+        font-size: 24px;
+        margin-bottom: 15px;
+
+    }
+    .video-wrapper{
+        width:100%;
+        padding-bottom: 56.25%;
+        border-radius: 6px;
+    }
+
 
     /* Contact & Google Map (Main Problem) */
     .Contact {
@@ -121,8 +136,8 @@
     }
 
     .Contact iframe {
-        width: 100% !important; /* Map ko phone ke screen ke andar fit karne ke liye */
-        height: 250px !important; /* Mobile ke liye map ki height thodi choti ki */
+        width: 100% !important; /* Map  */
+        height: 250px !important; /* */
     }
 
     /* Footer */
