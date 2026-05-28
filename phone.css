@@ -4,7 +4,7 @@
     }
 
     html, body {
-        width: 100%; /* Yahan 100px tha, use 100% kar diya */
+        width: 100%;
         overflow-x: hidden;
         margin: 0;
         padding: 0;
@@ -15,13 +15,13 @@
         padding: 10px 15px;
         width: 100%;
         display: flex;
-        flex-direction: column; /* Mobile par logo aur menu ek ke niche ek aane ke liye */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .navbar h2 {
-        font-size: 16px; /* College ka bada naam phone screen ke andar fit karne ke liye */
+        font-size: 16px; 
     }
 
     .navbar ul {
@@ -40,17 +40,17 @@
         font-size: 14px;
     }
 
-    /* Logo */
+   
     .logo {
         width: 50px;
         height: 40px;
     }
 
-    /* Hero Section */
+    
     .hero {
         padding: 40px 20px;
         height: auto;
-        min-height: auto; /* Extra khali jagah ko khatam karega */
+        min-height: auto; 
         text-align: center;
     }
 
@@ -68,7 +68,7 @@
         font-size: 14px;
     }
 
-    /* About Section */
+    
     .about {
         padding: 30px 20px;
         text-align: center;
@@ -78,7 +78,7 @@
         font-size: 24px;
     }
 
-    /* Courses Section */
+   
     .course {
         width: 100%;
         margin: 10px auto;
@@ -107,7 +107,7 @@
     .notice-box {
         width: 100%;
         margin: 20px auto;
-        height: auto; /* Box ka extra khali space hatane ke liye */
+        height: auto; 
     }
     .collegevideo{
         padding: 30px 20px;
@@ -125,7 +125,7 @@
     }
 
 
-    /* Contact & Google Map (Main Problem) */
+    
     .Contact {
         padding: 20px;
         text-align: center;
@@ -136,14 +136,20 @@
     }
 
     .Contact iframe {
-        width: 100% !important; /* Map  */
-        height: 250px !important; /* */
+        width: 100% ;
+        height:250px; 
     }
 
-    /* Footer */
+   
     footer {
         font-size: 13px;
         text-align: center;
         padding: 15px;
+    }
+    .footer-links{
+        top:50%;
+        right:30px;
+        font-size: 10px;
+    
     }
 }

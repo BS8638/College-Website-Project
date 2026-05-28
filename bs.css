@@ -90,8 +90,9 @@ body{
     transition: 0.3s;
 }
 
-.hero-btn a:hover {
-    background: #0b3d91;
+.hero-btn a:hover{
+    text-decoration: underline;
+    color: #ffcc00; 
 }
 .about{
     padding: 60px 10%;
@@ -284,21 +285,46 @@ font-weight: 700;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 footer{
-    background: #0b3d91;
+    background: #000000; 
     color: white;
     text-align: center;
     padding: 25px 20px;
     font-size: 15px;
+    position: relative;
 
 }
 footer p{
     margin: 5px 0;
 }
 footer b{
-    color:yellow
+    color:#ffff00
 }
 
-
+.footer-links {
+    position: absolute;
+    right: 180px;
+    top: 30%;
+    font-size: 30px;
+    display: flex;
+    gap:20px;
+    align-items: center; 
+     
+}
+.footer-links a {
+    font-size: 30px;
+    color: #888888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+}
+.footer-links a.instagram:hover {
+    color: #E1306c;
+    transform: scale(1.2);
+}
+.footer-links a.facebook:hover {
+    color: #1877f2;
+    transform: scale(1.2);
+}
 
 
 
