@@ -173,6 +173,10 @@ font-weight: 700;
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0 0 0 0.1);
 }
+.facilities-box div:hover{
+    transform: translate(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 .notice-container{
     padding: 40px 10%;
     display: flex;
